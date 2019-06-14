@@ -4,8 +4,8 @@ class Person
 
   def initialize(attributes)
     # binding.pry
-    atttributes.each {|key, value| self.send(("#{key}="), value)}
-    # attributes.each {|key, value| self.send(("#{key}="), value)}
+    # atttributes.each {|key, value| self.send(("#{key}="), value)}
+    attributes.each {|key, value| self.send(("#{key}="), value)}
     
   end
 
